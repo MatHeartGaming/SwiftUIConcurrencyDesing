@@ -12,12 +12,29 @@ struct HomeView: View {
     @EnvironmentObject var courseViewModel : CourseViewModel
     @EnvironmentObject var modalManager : ModalManager
     
+    var attributedString : AttributedString {
+        var subject = AttributedString(courseViewModel.featuredSubject.rawValue)
+        
+        var container = AttributeContainer()
+        container.foregroundColor = .purple
+        
+        if let course = courseViewModel.featuredCourses.first {
+            if let color = course.colors.first as? String {
+                container.foregroundColor = Color(hex: color)
+            }
+        }
+        
+        container.foregroundColor = .purple
+        subject.mergeAttributes(container)
+        return "Learn " + subject
+    }
+    
     var body: some View {
         ZStack(alignment: .top) {
             ScrollView {
                 VStack(spacing: 0) {
                     HStack {
-                        DateTitle(title: "Learn \(courseViewModel.featuredSubject)")
+                        DateTitle(title: attributedString)
                             .frame(maxWidth: .infinity, alignment: .leading)
                             .padding(.top, 20)
                             .padding(.horizontal, 20)
@@ -43,6 +60,7 @@ struct HomeView: View {
                         .font(.title2)
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .padding(.top, 40)
+                        .accessibilityAddTraits([.isHeader])
                     
                     CourseList(courses: courseViewModel.courses)
                         .padding(.top, 20)
@@ -54,6 +72,7 @@ struct HomeView: View {
                 .ignoresSafeArea()
                 .frame(height: 0)
         }
+        .toolbar(.hidden)
     }
 }
 

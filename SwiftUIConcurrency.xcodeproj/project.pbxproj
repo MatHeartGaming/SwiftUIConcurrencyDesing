@@ -33,6 +33,15 @@
 		FE6544B22A1E1E3200AB78DA /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6544B12A1E1E3200AB78DA /* AccountViewModel.swift */; };
 		FE6544B42A1E209600AB78DA /* ProfileCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6544B32A1E209600AB78DA /* ProfileCard.swift */; };
 		FE6544B62A1E213F00AB78DA /* SFSafariViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6544B52A1E213F00AB78DA /* SFSafariViewWrapper.swift */; };
+		FE6544BE2A1E4C0000AB78DA /* SectionViewCover.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6544B72A1E4C0000AB78DA /* SectionViewCover.swift */; };
+		FE6544BF2A1E4C0000AB78DA /* CloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6544B82A1E4C0000AB78DA /* CloseButton.swift */; };
+		FE6544C02A1E4C0000AB78DA /* SectionViewTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6544B92A1E4C0000AB78DA /* SectionViewTitle.swift */; };
+		FE6544C12A1E4C0000AB78DA /* CourseViewCover.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6544BA2A1E4C0000AB78DA /* CourseViewCover.swift */; };
+		FE6544C22A1E4C0000AB78DA /* CourseViewSubtitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6544BB2A1E4C0000AB78DA /* CourseViewSubtitle.swift */; };
+		FE6544C32A1E4C0000AB78DA /* SectionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6544BC2A1E4C0000AB78DA /* SectionRow.swift */; };
+		FE6544C42A1E4C0000AB78DA /* CourseViewTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6544BD2A1E4C0000AB78DA /* CourseViewTitle.swift */; };
+		FE6544C62A1E4C2700AB78DA /* CourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6544C52A1E4C2700AB78DA /* CourseView.swift */; };
+		FE6544C82A1E4E9A00AB78DA /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6544C72A1E4E9A00AB78DA /* SectionView.swift */; };
 		FEDD60052A1CF35D002330A2 /* SwiftUIConcurrencyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDD60042A1CF35D002330A2 /* SwiftUIConcurrencyApp.swift */; };
 		FEDD60072A1CF35D002330A2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDD60062A1CF35D002330A2 /* ContentView.swift */; };
 		FEDD60092A1CF35E002330A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEDD60082A1CF35E002330A2 /* Assets.xcassets */; };
@@ -75,6 +84,15 @@
 		FE6544B12A1E1E3200AB78DA /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
 		FE6544B32A1E209600AB78DA /* ProfileCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileCard.swift; sourceTree = "<group>"; };
 		FE6544B52A1E213F00AB78DA /* SFSafariViewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSafariViewWrapper.swift; sourceTree = "<group>"; };
+		FE6544B72A1E4C0000AB78DA /* SectionViewCover.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionViewCover.swift; sourceTree = "<group>"; };
+		FE6544B82A1E4C0000AB78DA /* CloseButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloseButton.swift; sourceTree = "<group>"; };
+		FE6544B92A1E4C0000AB78DA /* SectionViewTitle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionViewTitle.swift; sourceTree = "<group>"; };
+		FE6544BA2A1E4C0000AB78DA /* CourseViewCover.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseViewCover.swift; sourceTree = "<group>"; };
+		FE6544BB2A1E4C0000AB78DA /* CourseViewSubtitle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseViewSubtitle.swift; sourceTree = "<group>"; };
+		FE6544BC2A1E4C0000AB78DA /* SectionRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionRow.swift; sourceTree = "<group>"; };
+		FE6544BD2A1E4C0000AB78DA /* CourseViewTitle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseViewTitle.swift; sourceTree = "<group>"; };
+		FE6544C52A1E4C2700AB78DA /* CourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseView.swift; sourceTree = "<group>"; };
+		FE6544C72A1E4E9A00AB78DA /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
 		FEDD60012A1CF35D002330A2 /* SwiftUIConcurrency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIConcurrency.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEDD60042A1CF35D002330A2 /* SwiftUIConcurrencyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIConcurrencyApp.swift; sourceTree = "<group>"; };
 		FEDD60062A1CF35D002330A2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -190,6 +208,13 @@
 		FEDD60162A1D078D002330A2 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				FE6544B82A1E4C0000AB78DA /* CloseButton.swift */,
+				FE6544BA2A1E4C0000AB78DA /* CourseViewCover.swift */,
+				FE6544BB2A1E4C0000AB78DA /* CourseViewSubtitle.swift */,
+				FE6544BD2A1E4C0000AB78DA /* CourseViewTitle.swift */,
+				FE6544BC2A1E4C0000AB78DA /* SectionRow.swift */,
+				FE6544B72A1E4C0000AB78DA /* SectionViewCover.swift */,
+				FE6544B92A1E4C0000AB78DA /* SectionViewTitle.swift */,
 				FE6544B32A1E209600AB78DA /* ProfileCard.swift */,
 				FE6544A22A1E18CA00AB78DA /* GradientButton.swift */,
 				FE6544A02A1E18CA00AB78DA /* GradientIcon.swift */,
@@ -215,6 +240,8 @@
 				FE6544992A1E0BDE00AB78DA /* SectionsView.swift */,
 				FE6544AB2A1E196C00AB78DA /* ModalManagerView.swift */,
 				FE6544AD2A1E1CBC00AB78DA /* AccountView.swift */,
+				FE6544C52A1E4C2700AB78DA /* CourseView.swift */,
+				FE6544C72A1E4E9A00AB78DA /* SectionView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -324,12 +351,18 @@
 				FE6544862A1DF44E00AB78DA /* CourseViewModel.swift in Sources */,
 				FE6544A72A1E18CA00AB78DA /* GradientButton.swift in Sources */,
 				FEDD601F2A1D0C95002330A2 /* CourseList.swift in Sources */,
+				FE6544C42A1E4C0000AB78DA /* CourseViewTitle.swift in Sources */,
 				FE6544B02A1E1D2200AB78DA /* UserModel.swift in Sources */,
 				FEDD60072A1CF35D002330A2 /* ContentView.swift in Sources */,
 				FE6544AE2A1E1CBC00AB78DA /* AccountView.swift in Sources */,
+				FE6544C62A1E4C2700AB78DA /* CourseView.swift in Sources */,
+				FE6544BF2A1E4C0000AB78DA /* CloseButton.swift in Sources */,
 				FE6544962A1E09E300AB78DA /* SectionModel.swift in Sources */,
+				FE6544C32A1E4C0000AB78DA /* SectionRow.swift in Sources */,
 				FEDD60152A1D0784002330A2 /* HomeView.swift in Sources */,
+				FE6544C82A1E4E9A00AB78DA /* SectionView.swift in Sources */,
 				FE65448F2A1E01B900AB78DA /* PreviewData.swift in Sources */,
+				FE6544C22A1E4C0000AB78DA /* CourseViewSubtitle.swift in Sources */,
 				FE65449A2A1E0BDE00AB78DA /* SectionsView.swift in Sources */,
 				FE65449C2A1E0C8000AB78DA /* SectionList.swift in Sources */,
 				FE6544A82A1E18CA00AB78DA /* SignInView.swift in Sources */,
@@ -342,13 +375,16 @@
 				FE6544892A1DFC3B00AB78DA /* CourseModel.swift in Sources */,
 				FEDD60052A1CF35D002330A2 /* SwiftUIConcurrencyApp.swift in Sources */,
 				FE6544802A1DF24100AB78DA /* Network.swift in Sources */,
+				FE6544BE2A1E4C0000AB78DA /* SectionViewCover.swift in Sources */,
 				FE6544912A1E036500AB78DA /* Extensions.swift in Sources */,
 				FEDD601D2A1D0C54002330A2 /* CourseCard.swift in Sources */,
 				FE65448D2A1E016E00AB78DA /* LoadFromFile.swift in Sources */,
 				FEDD60132A1D06A1002330A2 /* DateTitle.swift in Sources */,
 				FE6544A62A1E18CA00AB78DA /* ResetPasswordView.swift in Sources */,
+				FE6544C02A1E4C0000AB78DA /* SectionViewTitle.swift in Sources */,
 				FE6544AC2A1E196C00AB78DA /* ModalManagerView.swift in Sources */,
 				FE6544AA2A1E190000AB78DA /* ModalManager.swift in Sources */,
+				FE6544C12A1E4C0000AB78DA /* CourseViewCover.swift in Sources */,
 				FE65449E2A1E17F100AB78DA /* ProfileIcon.swift in Sources */,
 				FEDD60192A1D081B002330A2 /* FeaturedCourseCard.swift in Sources */,
 				FE6544B42A1E209600AB78DA /* ProfileCard.swift in Sources */,

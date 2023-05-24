@@ -23,8 +23,11 @@ class CourseViewModel : ObservableObject {
     private let apollo = Network.shared.apollo
     
     private func queryCourses() async throws -> GraphQLResult<CourseQuery.Data>? {
+        
+        let preferredLanguage = Locale.preferredLanguages.first!
+        let locale = preferredLanguage.contains("it") ? "it" : "en-US"
         return await withCheckedContinuation({ continuation in
-            apollo.fetch(query: CourseQuery()) {result in
+            apollo.fetch(query: CourseQuery(locale: locale)) {result in
                 switch result {
                 case .success(let grapghQLResult):
                     continuation.resume(returning: grapghQLResult)

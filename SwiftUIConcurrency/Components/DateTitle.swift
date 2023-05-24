@@ -9,7 +9,7 @@ import SwiftUI
 
 struct DateTitle: View {
     
-    var title : String
+    var title : AttributedString
     @State private var date : String = ""
     
     var body: some View {
@@ -22,14 +22,26 @@ struct DateTitle: View {
             Text(title)
                 .font(.largeTitle).bold()
         }
+        .accessibilityAddTraits([.isHeader])
         .onAppear {
             date = Date.now.formatted(.dateTime.weekday(.wide).month().day())
         }
     }
 }
 
+
 struct DateTitle_Previews: PreviewProvider {
+    
+    static var attributedString : AttributedString {
+        var subject = AttributedString("SwiftUI")
+        
+        var container = AttributeContainer()
+        container.foregroundColor = .purple
+        subject.mergeAttributes(container)
+        return "Learn " + subject
+    }
+    
     static var previews: some View {
-        DateTitle(title: "Learn SwiftUI")
+        DateTitle(title: attributedString)
     }
 }

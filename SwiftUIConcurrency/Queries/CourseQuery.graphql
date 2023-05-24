@@ -1,5 +1,5 @@
-query Course {
-  courseCollection {
+query Course($locale : String) {
+  courseCollection(locale : $locale) {
     courses: items {
       sys {
         publishedAt

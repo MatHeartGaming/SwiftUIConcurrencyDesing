@@ -12,6 +12,8 @@ struct ProfileCard: View {
     var user : User
     
     @State private var showSafari = false
+    let description = Description(content: "I am Matteo")
+    @State private var userDescription = ""
     
     var body: some View {
         VStack(alignment: .leading, spacing: 16.0) {
@@ -29,7 +31,7 @@ struct ProfileCard: View {
                 Spacer()
             }
             
-            Text(user.company.catchPhrase)
+            Text(userDescription)
                 .font(.title2)
                 .fontWeight(.bold)
                 .frame(maxWidth: .infinity, alignment: .leading)
@@ -64,6 +66,8 @@ struct ProfileCard: View {
         .offset(y: 55)
         .fullScreenCover(isPresented: $showSafari) {
             SFSafariViewWrapper(url: URL(string: "https://\(user.website)")!)
+        }.task {
+            self.userDescription = await description.update(with: "I love SwiftUI ❤️")
         }
     }
     
@@ -94,7 +98,7 @@ struct ProfileCard_Previews: PreviewProvider {
 
         let previewCompany = User.Company(name: "Design+Code", catchPhrase: "Design and code", bs: "Learn design and code")
 
-        let previewUser = User(id: 1, name: "Stephanie", username: "stephdiep", email: "stephanie@designcode.io", phone: "123-456-7890", website: "designcode.io", address: previewAddress, company: previewCompany)
+        let previewUser = User(id: 1, name: "Matteo", username: "matbuompy", email: "matbuompy@designcode.io", phone: "123-456-7890", website: "designcode.io", address: previewAddress, company: previewCompany)
 
         ProfileCard(user: previewUser)
     }
